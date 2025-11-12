@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: mvcappdevkbi043
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: https://a03z.ucc.ovgu.de:3203  #http://cloud.ucc.ovgu.de/gui/H1333.xml
+          auth: basic
+          credentials:
+            username: env:S72_USER
+            password: env:S72_PASSWORD
+        app:
+          name: Z_MVCAPP_043
+          package: mvcappdevkbi043
+          transport: S72_DEVKBI_043
+        exclude:
+          - /test/

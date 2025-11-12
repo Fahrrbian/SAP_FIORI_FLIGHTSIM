@@ -1,0 +1,44 @@
+{
+    "Flight": [
+        {
+            "flightId": "LH123",
+            "from": "Munich",
+            "to": "Frankfurt",
+            "date": "11.05.2024",
+            "time": "10:30",
+            "status": "On Time",
+            "plannedArrival": "12:00",
+            "info": "Arrives early"
+        },
+        {
+            "flightId": "AF456",
+            "from": "Paris",
+            "to": "Rome",
+            "date": "01.07.2024",
+            "time": "14:00",
+            "status": "Delayed",
+            "plannedArrival": "16:30",
+            "info": "Delayed due to technical issues"
+        },
+        {
+            "flightId": "BA789",
+            "from": "London",
+            "to": "New York",
+            "date": "20.06.2024",
+            "time": "09:00",
+            "status": "Cancelled",
+            "plannedArrival": "12:00",
+            "info": "Cancelled due to weather conditions"
+        },
+        {
+            "flightId": "DL321",
+            "from": "Atlanta",
+            "to": "Los Angeles",
+            "date": "15.08.2024",
+            "time": "16:00",
+            "status": "On Time",
+            "plannedArrival": "18:30",
+            "info": "On schedule"
+        }
+    ]
+}

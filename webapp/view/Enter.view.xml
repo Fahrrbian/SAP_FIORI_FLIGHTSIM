@@ -1,0 +1,15 @@
+<mvc:View controllerName="mvcappdevkbi043.controller.Enter"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page id="pageEnter" 
+    title="{i18n>title}">
+        <content>
+            <FlexBox alignItems="Center" justifyContent="Center"
+            width="100%" height="100%">
+                <Button text="Show flight list using navTo" press="onPressNavTo" class="sapUiSmallMargin"/>
+                <Button text="Show flight list using getTargets" press="onPressTargets" class="sapUiSmallMargin"/>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

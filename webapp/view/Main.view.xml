@@ -1,0 +1,55 @@
+<mvc:View controllerName="mvcappdevkbi043.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    
+    <IconTabBar 
+    id="centralTabBar"
+    class="sapUiResponsiveContentPadding"
+    expandable="false">
+    <items>
+    <IconTabFilter text="Arrival">
+        <Table id="arrivalFlights"
+        items="{/Flight}"
+        growing="true">
+
+        <columns>
+            <Column>
+                <Text text="Flight ID" />
+            </Column>
+            <Column>
+                <Text text="From" />
+            </Column>
+            <Column>
+                <Text text="To" />
+            </Column>
+            <Column>
+                <Text text="Time" />
+            </Column>
+            <Column>
+                <Text text="Status" />
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem
+            type="Navigation"
+            press=".handleListItemPress">
+                <cells>
+                    <Text text="{flightId}" />
+                    <Text text="{from}" />
+                    <Text text="{to}" />
+                    <Text text="{time}" />
+                    <Text text="{status}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+        </Table>
+    </IconTabFilter>
+    <IconTabFilter text="Departure">
+    <Text text="Here you will see departing flights soon!"></Text>
+    </IconTabFilter>
+    </items>
+    
+    </IconTabBar>
+    </Page>
+</mvc:View>
